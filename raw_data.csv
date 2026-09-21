@@ -1,0 +1,11 @@
+Customer_ID,Customer_Name,Product,Quantity,Price,Date,City
+101,Riya,Headphones,2,1500,2026-08-01,Raipur
+102,Aman,Keyboard,1,2200,2026-08-02,Bhilai
+103,Priya,Mouse,3,700,2026-08-03,Raipur
+104,Rahul,Laptop Stand,2,1200,2026-08-04,Durg
+105,Neha,Headphones,1,1500,2026-08-05,Raipur
+106,Aman,Keyboard,1,2200,2026-08-02,Bhilai
+107,,Mouse,2,700,2026-08-06,Durg
+108,Karan,Laptop Stand,,1200,2026-08-07,Raipur
+109,Simran,Headphones,2,,2026-08-08,Bhilai
+110,Rohit,Mouse,4,700,2026-08-09,
