@@ -86,3 +86,75 @@ plt.savefig("sales_by_product.png")
 plt.show()
 
 print("\nSales visualization saved successfully!")
+# ==========================================
+# SALES BY CITY VISUALIZATION
+# ==========================================
+
+city_sales = df.groupby("City")["Total_Sales"].sum()
+
+city_sales.plot(kind="bar")
+
+plt.title("Sales by City")
+plt.xlabel("City")
+plt.ylabel("Total Sales")
+
+plt.tight_layout()
+plt.savefig("sales_by_city.png")
+
+plt.show()
+
+print("\nCity-wise sales visualization saved successfully!")
+# ==========================================
+# SALES SUMMARY DASHBOARD
+# ==========================================
+
+total_sales = df["Total_Sales"].sum()
+average_sale = df["Total_Sales"].mean()
+
+top_product = (
+    df.groupby("Product")["Total_Sales"]
+    .sum()
+    .idxmax()
+)
+
+top_city = (
+    df.groupby("City")["Total_Sales"]
+    .sum()
+    .idxmax()
+)
+
+print("\n--- SALES SUMMARY ---")
+print("Total Sales:", total_sales)
+print("Average Sale:", average_sale)
+print("Top Product:", top_product)
+print("Top City:", top_city)
+# ==========================================
+# CREATE DASHBOARD IMAGE
+# ==========================================
+
+fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+
+# Product Sales
+product_sales = df.groupby("Product")["Total_Sales"].sum()
+product_sales.plot(kind="bar", ax=axes[0])
+
+axes[0].set_title("Sales by Product")
+axes[0].set_xlabel("Product")
+axes[0].set_ylabel("Total Sales")
+
+# City Sales
+city_sales = df.groupby("City")["Total_Sales"].sum()
+city_sales.plot(kind="bar", ax=axes[1])
+
+axes[1].set_title("Sales by City")
+axes[1].set_xlabel("City")
+axes[1].set_ylabel("Total Sales")
+
+plt.suptitle("Customer Sales Analysis Dashboard", fontsize=16)
+
+plt.tight_layout()
+plt.savefig("sales_summary.png")
+
+plt.show()
+
+print("\nDashboard saved successfully!")
