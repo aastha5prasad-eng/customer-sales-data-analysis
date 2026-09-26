@@ -29,3 +29,64 @@ The project generates:
 - Cleaned customer dataset
 - Sales analysis
 - Product-wise sales chart
+## Project Results
+
+- Cleaned and prepared customer sales data for analysis.
+- Removed duplicate records and handled missing values.
+- Performed product-wise and customer-wise sales analysis.
+- Generated visual insights using Python and Pandas.
+- Created a sales-by-product visualization for easy interpretation.
+
+## Author
+
+**Astha Prasad**  
+B.Tech – Artificial Intelligence & Machine Learning
+## Results & Insights
+
+The analysis provides:
+
+- Total sales and average sale value.
+- Product-wise sales comparison.
+- City-wise sales performance.
+- A cleaned dataset ready for further analysis.
+- A visual bar chart showing sales by product.
+
+## Project Workflow
+
+Raw Sales Data
+→ Data Cleaning
+→ Missing Value Handling
+→ Duplicate Removal
+→ Sales Calculation
+→ Business Analysis
+→ Data Visualization
+## Results & Insights
+
+The analysis provides:
+
+- Total sales and average sale value.
+- Product-wise sales comparison.
+- City-wise sales performance.
+- A cleaned dataset ready for further analysis.
+- A sales-by-product visualization.
+
+## Project Workflow
+
+Raw Sales Data  
+↓  
+Data Cleaning  
+↓  
+Missing Value Handling  
+↓  
+Duplicate Removal  
+↓  
+Total Sales Calculation  
+↓  
+Business Analysis  
+↓  
+Data Visualization
+
+## Author
+
+**Astha Prasad**  
+B.Tech – Artificial Intelligence & Machine Learnings
